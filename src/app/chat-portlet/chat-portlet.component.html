@@ -1,0 +1,14 @@
+
+<div class="portlet">
+    <mat-toolbar>{{data.user}}</mat-toolbar>
+<mat-tab-group>
+
+
+  <mat-tab *ngFor="let chat of data?.friends" [label]="chat.name"> 
+    
+      <app-chat-body [chat] = "chat.history" ></app-chat-body>
+  
+  </mat-tab>
+
+</mat-tab-group>
+</div>

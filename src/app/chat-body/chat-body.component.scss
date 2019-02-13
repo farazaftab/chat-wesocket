@@ -1,0 +1,25 @@
+    /* width: 100%; */
+    /* bottom: 46px; */
+    /* position: absolute; */
+   // top: 100px;
+
+   .chat-body {
+       min-height: 800px;
+       border: black 1px solid;
+
+       .mat-card {
+           margin: 20px
+       }
+
+    .input-container {
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+ 
+         .input-mat {
+             width: 100%
+         }
+ 
+     }
+   }
+    

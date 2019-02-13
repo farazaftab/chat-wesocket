@@ -1,0 +1,11 @@
+<div class="chat-body">
+ 
+
+  <mat-card class="mat-card" *ngFor="let text of chat">{{text.msg}}</mat-card>
+
+  <div class="input-container">
+    <mat-form-field class="input-mat">
+      <input matInput placeholder="type.." value="">
+    </mat-form-field>
+  </div>
+</div>
