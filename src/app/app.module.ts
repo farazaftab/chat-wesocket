@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ChatPortletComponent } from './chat-portlet/chat-portlet.component';
 import { ChatBodyComponent } from './chat-body/chat-body.component';
+import { SocketService } from './socket.service';
 
 @NgModule({
   declarations: [
@@ -28,8 +30,9 @@ import { ChatBodyComponent } from './chat-body/chat-body.component';
     FormsModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
